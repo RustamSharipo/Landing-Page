@@ -23,6 +23,8 @@ body{
 }
 
 .card{
+    transform: translateX(400px);
+    transition: 1.5s;
     position: absolute;
     left: 200%;
 }
@@ -94,6 +96,9 @@ body{
 .together{
     opacity: 0;
     transition: 1.5s;
+}
+.card.element_show{
+    transform: translateX(0);
 }
 .text.element_show{
     opacity: 1;

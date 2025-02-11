@@ -12,6 +12,7 @@ let options = {
   let git = document.querySelectorAll('.git');
   let landing_page = document.querySelectorAll('.landing_page');
   let together = document.querySelectorAll('.together');
+  let card = document.querySelectorAll('.card');
 for (let txt of text) {
     observer.observe(txt);
 }
@@ -23,4 +24,7 @@ for (let ld of landing_page) {
 }
 for (let tg of together) {
     observer.observe(tg);
+}
+for (let cd of card) {
+    observer.observe(cd);
 }
