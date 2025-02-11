@@ -1,0 +1,112 @@
+@import "font.css";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    position: absolute;
+    background: #1A1E1C;
+    overflow: hidden;
+}
+.landing_page_text{
+    position: absolute;
+    left: 40%;
+    width: 1000px;
+}
+
+.card{
+    position: absolute;
+    left: 200%;
+}
+.links{
+    display: flex;
+}
+.text{
+    opacity: 0;
+    font-family: 'Montserrat';
+    color: #9DFF9D;
+    font-size: 100px;
+    transition: 1.5s;
+    transform: translateY(100px);
+}
+.additional_text{
+    transition: 2s;
+    transform: translateY(150px);
+}
+.git{
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: 1.5s;
+    font-family: 'Manrope';
+    font-size: 24px;
+    border-radius: 16px;
+    background: #000000;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+}
+.git_img{
+    margin-right: 8px;
+}
+.texts{
+    margin-bottom: 50px;
+}
+.landing_page{
+    opacity: 0;
+    transform: translateY(200px);
+    transition: 1.5s;
+    font-family: 'Manrope';
+    font-size: 24px;
+    padding: 16px 24px;
+    border-radius: 16px;
+    color: #ffff;
+    background: #2BB32A;
+    background: -webkit-linear-gradient(-72deg, #2BB32A, #3D544D);
+    background: linear-gradient(-72deg, #2BB32A, #3D544D);
+    background-size: 200%;
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    animation: gradient 5s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+.together{
+    opacity: 0;
+    transition: 1.5s;
+}
+.text.element_show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.git.element_show{
+    opacity: 1;
+    transform: translateX(0);
+}
+.landing_page.element_show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.together.element_show{
+    opacity: 1;
+}
