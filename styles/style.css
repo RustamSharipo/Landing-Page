@@ -97,12 +97,12 @@ body{
     opacity: 0;
     transition: 1.5s;
 }
-.card.element_show{
-    transform: translateX(0);
-}
 .text.element_show{
     opacity: 1;
     transform: translateY(0);
+}
+.card.element_show{
+    transform: translateX(0);
 }
 .git.element_show{
     opacity: 1;
